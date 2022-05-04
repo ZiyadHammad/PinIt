@@ -16,11 +16,11 @@ const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: true,
+    require: true,
     min: 6,
   }
 },
   {timestamps: true}
 ) 
 
-module.export = mongoose.model("User", UserSchema)
+module.exports = mongoose.model("User", UserSchema)
